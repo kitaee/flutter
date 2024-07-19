@@ -29,6 +29,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  int count = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('홈'),
       ),
       body: Center(
-        child: Text('0',
+        child: Text('$count',
             style: TextStyle(
               color: Colors.red,
               fontSize: 70,
@@ -44,7 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          print('클릭');
+          setState(() {
+            count++;
+          });
         },
         child: Icon(Icons.add),
       ),
