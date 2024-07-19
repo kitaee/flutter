@@ -42,6 +42,12 @@ class _MyHomePageState extends State<MyHomePage> {
               fontSize: 70,
             )),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print('클릭');
+        },
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
