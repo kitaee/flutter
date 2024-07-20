@@ -53,6 +53,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 print(text);
               },
             ),
+            Image.network(
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSax7414sZt6C_T55Vtz5-TDZBr840uo3MRBQ&s',
+              width: 200,
+              height: 200,
+              fit: BoxFit.cover,
+            )
           ],
         ),
       ),
