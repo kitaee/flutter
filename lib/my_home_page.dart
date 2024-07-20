@@ -20,6 +20,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Container(
+              color: Colors.red,
+              width: 50,
+              height: 50,
+            ),
             Text('숫자',
                 style: TextStyle(
                   color: Colors.black,
@@ -53,11 +58,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 print(text);
               },
             ),
-            Image.network(
-              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSax7414sZt6C_T55Vtz5-TDZBr840uo3MRBQ&s',
-              width: 200,
-              height: 200,
-              fit: BoxFit.cover,
+            Container(
+              color: Colors.red,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.network(
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSax7414sZt6C_T55Vtz5-TDZBr840uo3MRBQ&s',
+                  width: 100,
+                  height: 100,
+                  fit: BoxFit.cover,
+                ),
+              ),
             )
           ],
         ),
